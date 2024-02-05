@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+@layer components {
+    .input {
+        @apply bg-light-secBg dark:bg-dark-secBg py-2 px-3 border border-light-secBg dark:border-dark-secBg
+        rounded-md focus:outline-none focus:border-light-thirdBg focus:dark:border-dark-thirdBg placeholder:text-sm mb-3;
+    }
+    .icon {
+        @apply w-8 h-8 bg-light-secBg dark:bg-dark-secBg hover:bg-light-fourthBg hover:dark:bg-dark-fourthBg rounded-md cursor-pointer flex justify-center items-center;
+    }
+    ::-webkit-scrollbar-track {
+        @apply bg-light-fourthBg dark:bg-dark-fourthBg rounded-md;
+    }
+    ::-webkit-scrollbar {
+        @apply w-1.5 h-1.5
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply rounded-md bg-light-secColor dark:bg-dark-secColor;
+    }
+    
+}
+
+.active {
+    background-color: #3b82f6;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closed {
+    width: 0;
+    padding: 16px 0;
+    transition: 0.4s
+}
+
+.opened {
+    width: 80px;
+    padding: 16px 12px;
+    transition: 0.4s
+}
+
+.special-1 {
+    max-height: 77vh;
+}
+
+.special-2 {
+    max-height: 85vh;
+}
+
+.file-upload > input {
+    display: none;
+}
+
