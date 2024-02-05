@@ -18,7 +18,7 @@ This is a chat app designed for swift conversations with instant message deliver
 
 ### Screenshot
 
-![chat app Screenshot](screenshot.png)
+![chat app Screenshot](Screenshot.png)
 
 ### Links
 
