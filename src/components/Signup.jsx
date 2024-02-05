@@ -91,10 +91,10 @@ function Signup() {
                             <div className="flex-grow border-t dark:border-dark-border"></div>
                         </div>
                         <div className="flex justify-center items-center gap-8">
-                            <button className="icon" onClick={SignupWithGoogle} name="siginup by google" >
+                            <button className="icon" onClick={SignupWithGoogle} title="siginup by google" >
                                 <FcGoogle />
                             </button>
-                            <button className="icon" onClick={SignupWithGoogle} name="siginup by google">
+                            <button className="icon" onClick={SignupWithGoogle} title="siginup by google">
                                 <FaApple />
                             </button>
                         </div>
